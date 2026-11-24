@@ -77,6 +77,26 @@
   .hand { font-family: Caveat, "Segoe Print", cursive; font-weight: 700; color: var(--gold); line-height: 1.15; }
   h1, h2 { font-family: Marcellus, Georgia, serif; font-weight: 400; letter-spacing: .005em; }
 
+  /* Faixa da Black Friday (aparece só entre 24/11 e 30/11) */
+  .bf {
+    display: block; margin: 12px 0 0; padding: 11px 14px 12px; border-radius: 14px;
+    background: #17130F; color: #F6EFE4; text-decoration: none; text-align: center;
+    border: 1.5px solid #6B5530; box-shadow: var(--shadow);
+  }
+  .bf[hidden] { display: none; }
+  body.tem-bf .logo { width: 104px; height: 104px; }
+  body.tem-bf header { padding-top: 16px; }
+  body.tem-bf .hero { padding-top: 14px; }
+  .bf-kicker { display: inline-block; font: 800 12.5px/1 Nunito, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #17130F; background: #E3C77F; padding: 6px 10px; border-radius: 999px; }
+  .bf-title { display: block; font: 400 19px/1.25 Marcellus, Georgia, serif; margin: 8px 0 2px; }
+  .bf-text { display: block; font-size: 13.5px; line-height: 1.4; color: #D9CFC2; }
+  .bf-clock { display: flex; justify-content: center; align-items: center; gap: 6px; margin: 8px 0 0; }
+  .bf-clock[hidden] { display: none; }
+  .bf-clock > span { display: inline-flex; align-items: baseline; gap: 3px; background: #2A231C; border: 1px solid #4A3D2B; border-radius: 8px; padding: 4px 9px; }
+  .bf-clock b { font: 800 18px/1.1 Nunito, sans-serif; color: #E3C77F; font-variant-numeric: tabular-nums; }
+  .bf-clock small { font-size: 11.5px; color: #B9AC9C; }
+  .bf-go { display: inline-block; margin-top: 7px; font-weight: 800; font-size: 14px; color: #E3C77F; text-decoration: underline; text-underline-offset: 3px; }
+
   /* Topo */
   header { padding: 26px 0 0; text-align: center; }
   .logo { width: 136px; height: 136px; margin: 0 auto 8px; border-radius: 50%; box-shadow: var(--shadow); }
@@ -247,6 +267,18 @@
 </svg>
 
 <div class="wrap">
+  <a class="bf js-whatsapp" id="bf" href="#" target="_blank" rel="noopener" data-cta="faixa-black-friday" hidden>
+    <span class="bf-kicker" id="bf-kicker">Semana Black Friday</span>
+    <span class="bf-title" id="bf-title">As ofertas vão sair no grupo</span>
+    <span class="bf-text" id="bf-text">Achadinhos de casa no grupo todos os dias até 30/11.</span>
+    <span class="bf-clock" id="bf-clock" aria-label="Contagem regressiva para a Black Friday">
+      <em class="bf-text" style="display:inline;font-style:normal">começa em</em>
+      <span><b id="bf-d">0</b><small>d</small></span>
+      <span><b id="bf-h">00</b><small>h</small></span>
+      <span><b id="bf-m">00</b><small>min</small></span>
+    </span>
+    <span class="bf-go">Quero receber no WhatsApp →</span>
+  </a>
   <header>
     <picture>
       <source srcset="assets/logo.webp" type="image/webp">
@@ -426,6 +458,33 @@
       setTimeout(() => { window.location.href = a.href; }, 350);
     });
   });
+
+  // Faixa da Black Friday: muda sozinha conforme a data (horário de Brasília) e some depois de 30/11.
+  (function () {
+    const bf = document.getElementById("bf");
+    const inicio = new Date("2026-11-27T00:00:00-03:00");
+    const fim = new Date("2026-12-01T00:00:00-03:00");
+    const doisDigitos = n => String(n).padStart(2, "0");
+    function atualizar() {
+      const agora = new Date();
+      if (agora >= fim) { bf.hidden = true; document.body.classList.remove("tem-bf"); return; }
+      bf.hidden = false;
+      document.body.classList.add("tem-bf");
+      if (agora >= inicio) {
+        document.getElementById("bf-kicker").textContent = "Black Friday rolando";
+        document.getElementById("bf-title").textContent = "As ofertas estão saindo no grupo agora";
+        document.getElementById("bf-text").textContent = "Achadinhos de casa no grupo todos os dias até segunda, 30/11.";
+        document.getElementById("bf-clock").hidden = true;
+        return;
+      }
+      const falta = Math.max(0, inicio - agora);
+      document.getElementById("bf-d").textContent = Math.floor(falta / 864e5);
+      document.getElementById("bf-h").textContent = doisDigitos(Math.floor(falta / 36e5) % 24);
+      document.getElementById("bf-m").textContent = doisDigitos(Math.floor(falta / 6e4) % 60);
+    }
+    atualizar();
+    setInterval(atualizar, 30000);
+  })();
 
   // Mostra o botão fixo depois que o botão principal sai da tela.
   const sticky = document.getElementById("sticky");
