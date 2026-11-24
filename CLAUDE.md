@@ -30,7 +30,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 - R$ 20/dia no conjunto, **Brasil amplo**, 22 a 55 anos, Público Advantage+, Feed/Stories/Reels do Facebook e Instagram, sem Audience Network.
 - 3 anúncios: `01 - Mesa de Natal`, `02 - Casa sem vida`, `03 - Black Friday fake` (pausar o 03 em 30/11/2026).
 - Início previsto: 25/11/2026.
-- Montada pelo conector em 24/11/2026 como **rascunho** (publicar com `ads_activate_entity` na campanha, só com aprovação):
+- Montada pelo conector em 24/11/2026 e **publicada** no mesmo dia com aprovação do dono. Esta campanha não aceita agenda por anúncio, então o anúncio 03 **não** tem término automático: pausar manualmente em 30/11/2026.
 
 | Objeto | ID |
 |---|---|
@@ -38,7 +38,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 | Conjunto `Brasil amplo - Lead - R$20` | `120250372498980694` |
 | Anúncio `01 - Mesa de Natal` (vídeo `1082055894888413`) | `120250372527210694` |
 | Anúncio `02 - Casa sem vida` (vídeo `1186489247067451`) | `120250372530580694` |
-| Anúncio `03 - Black Friday fake` (vídeo `1664190651832458`, termina 30/11 23:59) | `120250372530630694` |
+| Anúncio `03 - Black Friday fake` (vídeo `1664190651832458`, pausar manualmente em 30/11) | `120250372530630694` |
 
 - Página do Facebook usada como identidade: `Casa.emconta01` (`1423100977560737`). O Instagram @casa.emconta01 ainda **não** estava vinculado à conta de anúncios.
 - Os `.mp4` não vão para o git (`.gitignore`); os vídeos ficam na biblioteca da conta de anúncios.
