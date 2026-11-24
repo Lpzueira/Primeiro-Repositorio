@@ -223,6 +223,18 @@
 
   @media (prefers-reduced-motion: reduce) { .sticky, .btn { transition: none; } }
 </style>
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1477454040680046');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1477454040680046&ev=PageView&noscript=1"></noscript>
+<!-- Fim do Meta Pixel -->
 </head>
 <body>
 
@@ -366,6 +378,7 @@
   </main>
 
   <footer>
+    <p>Esta página usa cookies da Meta para medir o resultado dos anúncios.</p>
     <p>Participo do Programa de Afiliados do Mercado Livre. Os preços e a disponibilidade são definidos pelo Mercado Livre e podem mudar sem aviso.</p>
   </footer>
 </div>
@@ -393,6 +406,21 @@
   setLinks(".js-whatsapp", CONFIG.whatsapp);
   setLinks(".js-instagram", CONFIG.instagram);
   setLinks(".js-vitrine", CONFIG.vitrine);
+
+  // Eventos do Pixel: clique no grupo = Lead (conversão principal das campanhas).
+  document.querySelectorAll("[data-cta]").forEach(a => {
+    a.addEventListener("click", () => {
+      if (typeof fbq !== "function") return;
+      const origem = a.dataset.cta;
+      if (a.classList.contains("js-whatsapp")) {
+        fbq("track", "Lead", { content_name: "Grupo WhatsApp", origem });
+      } else if (a.classList.contains("js-instagram")) {
+        fbq("trackCustom", "CliqueInstagram", { origem });
+      } else if (a.classList.contains("js-vitrine")) {
+        fbq("trackCustom", "CliqueVitrine", { origem });
+      }
+    });
+  });
 
   // Mostra o botão fixo depois que o botão principal sai da tela.
   const sticky = document.getElementById("sticky");

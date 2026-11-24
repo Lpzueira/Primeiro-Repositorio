@@ -43,3 +43,16 @@ Depois de publicar, coloque o endereço na bio do Instagram.
 ## Domínio próprio (próximo passo)
 
 Quando os resultados começarem, registre `casaemconta.com.br` no registro.br (cerca de R$ 40 por ano) e aponte para o GitHub Pages em *Settings → Pages → Custom domain*. O link `lpzueira.github.io/casaemconta` continua funcionando e redireciona para o domínio.
+
+## Meta Pixel
+
+Pixel `1477454040680046` (portfólio Casa em Conta), instalado no `<head>` do `index.html`.
+
+| Evento | Quando dispara |
+|---|---|
+| `PageView` | Ao abrir a página |
+| `Lead` | Clique em qualquer botão do grupo do WhatsApp (conversão das campanhas) |
+| `CliqueInstagram` | Clique em botões do Instagram |
+| `CliqueVitrine` | Clique no botão da vitrine do Mercado Livre |
+
+Cada evento leva o parâmetro `origem` com o `data-cta` do botão clicado.
