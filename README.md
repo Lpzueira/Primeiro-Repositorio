@@ -6,7 +6,10 @@ Página "link na bio" do Instagram [@casa.emconta01](https://www.instagram.com/c
 
 ## Arquivos
 
-- `index.html`: a página inteira (HTML, CSS e JS num arquivo só, sem dependências).
+- `index.html`: a página inteira (HTML, CSS e JS num arquivo só).
+- `assets/`: logo, ícone da aba e fotos da obra usadas na página.
+
+Cada botão tem um `data-cta` (`hero`, `fixo`, `final`, `topo-instagram`, `topo-vitrine`, `final-instagram`, `final-vitrine`, `album-instagram`) para medir cliques quando o Pixel da Meta for instalado.
 
 ## Como editar os links
 
