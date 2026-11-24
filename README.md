@@ -24,7 +24,7 @@ Quando o grupo chegar perto de 1.024 membros (o limite do WhatsApp), crie o grup
 
 O repositório é **privado**, e o GitHub Pages só funciona de graça em repositório **público**. Há duas opções:
 
-1. **GitHub Pages:** torne o repositório público (*Settings → General → Danger Zone → Change visibility*). Depois, em *Settings → Pages*, escolha *Deploy from a branch*, a branch `main` e a pasta `/ (root)`. O endereço fica `https://lpzueira.github.io/primeiro-repositorio/`.
+1. **GitHub Pages:** torne o repositório público (*Settings → General → Danger Zone → Change visibility*). Depois, em *Settings → Pages*, escolha *Deploy from a branch*, a branch `main` e a pasta `/ (root)`. O endereço fica `https://lpzueira.github.io/casaemconta/`.
 2. **Netlify ou Cloudflare Pages:** conecte o repositório privado ou arraste o `index.html`. Também é grátis.
 
 Depois de publicar, coloque o endereço na bio do Instagram.
@@ -34,3 +34,7 @@ Depois de publicar, coloque o endereço na bio do Instagram.
 - Em *Configurações do grupo*, ative **Enviar mensagens: somente admins**, como a página promete.
 - Coloque na descrição do grupo o aviso de afiliado e as regras.
 - Fixe uma mensagem de boas-vindas.
+
+## Domínio próprio (próximo passo)
+
+Quando os resultados começarem, registre `casaemconta.com.br` no registro.br (cerca de R$ 40 por ano) e aponte para o GitHub Pages em *Settings → Pages → Custom domain*. O link `lpzueira.github.io/casaemconta` continua funcionando e redireciona para o domínio.
