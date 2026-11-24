@@ -1,1 +1,36 @@
-# Primeiro-Repositorio
+# Casa em Conta: página de captura
+
+Página "link na bio" do Instagram [@casa.emconta01](https://www.instagram.com/casa.emconta01/), que leva o visitante para o grupo VIP de achadinhos no WhatsApp.
+
+## Arquivos
+
+- `index.html`: a página inteira (HTML, CSS e JS num arquivo só, sem dependências).
+
+## Como editar os links
+
+No final do `index.html` existe um bloco `CONFIG`:
+
+```js
+const CONFIG = {
+  whatsapp: "https://chat.whatsapp.com/...",  // convite do grupo
+  instagram: "https://www.instagram.com/casa.emconta01/",
+  vitrine: "https://meli.la/2BbXAdh"           // vitrine de afiliado no Mercado Livre
+};
+```
+
+Quando o grupo chegar perto de 1.024 membros (o limite do WhatsApp), crie o grupo 2 e troque o link `whatsapp`. Todos os botões da página passam a apontar para o grupo novo.
+
+## Como publicar (grátis)
+
+O repositório é **privado**, e o GitHub Pages só funciona de graça em repositório **público**. Há duas opções:
+
+1. **GitHub Pages:** torne o repositório público (*Settings → General → Danger Zone → Change visibility*). Depois, em *Settings → Pages*, escolha *Deploy from a branch*, a branch `main` e a pasta `/ (root)`. O endereço fica `https://lpzueira.github.io/primeiro-repositorio/`.
+2. **Netlify ou Cloudflare Pages:** conecte o repositório privado ou arraste o `index.html`. Também é grátis.
+
+Depois de publicar, coloque o endereço na bio do Instagram.
+
+## Checklist do grupo no WhatsApp
+
+- Em *Configurações do grupo*, ative **Enviar mensagens: somente admins**, como a página promete.
+- Coloque na descrição do grupo o aviso de afiliado e as regras.
+- Fixe uma mensagem de boas-vindas.
