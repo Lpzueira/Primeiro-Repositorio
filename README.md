@@ -1,5 +1,7 @@
 # Casa em Conta: página de captura
 
+No ar em: https://lpzueira.github.io/casaemconta/
+
 Página "link na bio" do Instagram [@casa.emconta01](https://www.instagram.com/casa.emconta01/), que leva o visitante para o grupo VIP de achadinhos no WhatsApp.
 
 ## Arquivos
