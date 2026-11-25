@@ -65,3 +65,10 @@ Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mine
 - Os Leads e PageViews de 24/11/2026 (antes da campanha) são testes do próprio dono.
 - Perto de 1.024 membros: criar o grupo 2 e trocar o link `whatsapp` no `CONFIG` do `index.html`.
 - Confirmar se as regras do programa de afiliados do ML permitem tráfego pago e o uso da marca nos criativos.
+
+## Acompanhamento agendado (avisos no celular do dono)
+
+- 07:33: checagem matinal (`trig_01TTaAdQUQPtZKL4DgiHvyt2`).
+- ~11h, ~15h e ~20h (rodam às 10:56, 14:56 e 19:56): checagem rápida (`trig_01EuJ3Re8oYc8pg8hwfmVkFg`). A das 20h também pede membros e seguidores.
+- ~21h (roda às 20:56): relatório do dia com parecer bom/ok/ruim (`trig_01FmY7QRnnaewh3xEPHR5HRm`).
+- Notificação push só nessas checagens, em lembretes agendados ou em algo urgente. Nunca a cada tarefa pedida durante o dia.
