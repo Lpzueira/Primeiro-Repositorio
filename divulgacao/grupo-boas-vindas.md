@@ -16,7 +16,7 @@ Estou construindo minha casa do zero e mobiliando tudo com *achadinhos do Mercad
 
 *Combinados do grupo:*
 ✅ Só eu envio mensagens, então não tem bagunça nem corrente
-✅ Poucas ofertas por dia, só as que valem a pena
+✅ Ofertas selecionadas em 3 horários do dia, só as que valem a pena
 ✅ Pode silenciar o grupo e olhar quando quiser
 ✅ A compra é feita direto no Mercado Livre, com a garantia e a entrega deles
 
@@ -37,6 +37,6 @@ A linha da Black Friday vale até 30/11. Em 01/12, edite a mensagem sem ela e fi
 
 ```
 🏡 Achadinhos do Mercado Livre para a sua casa: cozinha, decoração, organização e cupons.
-✅ Só a administradora posta • poucas ofertas por dia • pode silenciar à vontade.
+✅ Só o Casa em Conta posta • ofertas em 3 horários do dia • pode silenciar à vontade.
 Participo do Programa de Afiliados do Mercado Livre.
 ```
