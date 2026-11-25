@@ -55,6 +55,8 @@ Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mine
 
 ## Pontos de atenção
 
+- **Política de spam da Meta:** em 24/11/2026 os anúncios 01 e 02 foram rejeitados por "spam" (venda de engajamento). Causa provável: os selos "comenta QUERO" dentro dos vídeos (pedir comentário em anúncio = isca de engajamento). **Não usar "comenta", "curta", "marque" ou "compartilhe" em criativos de anúncio**; o pedido de ação deve ser "toque em Saiba mais".
+
 - **Lead ≠ membro.** O Pixel conta o clique no botão, não a entrada no grupo. Compare os Leads com a contagem real de membros, que o dono anota todo dia no mesmo horário.
 - **Membro barato não é membro que compra.** Quando houver vendas, cruze com os cliques e as comissões do painel de afiliados do ML.
 - Os Leads e PageViews de 24/11/2026 (antes da campanha) são testes do próprio dono.
