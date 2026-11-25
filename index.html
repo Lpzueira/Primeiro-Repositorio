@@ -84,7 +84,7 @@
     border: 1.5px solid #6B5530; box-shadow: var(--shadow);
   }
   .bf[hidden] { display: none; }
-  body.tem-bf .logo { width: 72px; height: 72px; }
+  body.tem-bf .logo { width: 76px; height: 76px; }
   body.tem-bf header { padding-top: 12px; }
   body.tem-bf .hero { padding-top: 8px; }
   .bf-kicker { display: inline-block; font: 800 12.5px/1 Nunito, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #17130F; background: #E3C77F; padding: 6px 10px; border-radius: 999px; }
@@ -98,8 +98,12 @@
   .bf-go { display: inline-block; margin-top: 5px; font-weight: 800; font-size: 14px; color: #E3C77F; text-decoration: underline; text-underline-offset: 3px; }
 
   /* Topo */
-  header { padding: 18px 0 0; text-align: center; }
-  .logo { width: 96px; height: 96px; margin: 0 auto 4px; border-radius: 50%; box-shadow: var(--shadow); }
+  header { padding: 18px 0 0; display: flex; align-items: center; gap: 14px; }
+  header picture { flex: none; }
+  .head-txt { min-width: 0; }
+  .head-txt .hello { margin: 0 0 4px; font-size: clamp(20px, 6.2vw, 25px); white-space: nowrap; }
+  .head-txt .handle { display: inline-block; }
+  .logo { flex: none; width: 96px; height: 96px; margin: 0; border-radius: 50%; box-shadow: var(--shadow); }
   .handle { font-size: 15px; font-weight: 700; color: var(--muted); text-decoration: none; }
   .handle:hover { color: var(--gold); }
 
@@ -284,12 +288,14 @@
       <source srcset="assets/logo.webp" type="image/webp">
       <img class="logo" src="assets/logo.png" alt="Logo Casa em Conta" width="136" height="136">
     </picture>
-    <a class="handle js-instagram" href="#" target="_blank" rel="noopener">@casa.emconta01</a>
+    <div class="head-txt">
+      <p class="hand hello">oi, que bom te ver por aqui!</p>
+      <a class="handle js-instagram" href="#" target="_blank" rel="noopener">@casa.emconta01</a>
+    </div>
   </header>
 
   <main>
     <div class="hero">
-      <p class="hand hello">oi, que bom te ver por aqui!</p>
       <h1>Estou mobiliando minha casa nova com <span class="mark">achadinhos do Mercado&nbsp;Livre</span></h1>
       <p>A obra ainda está no tijolo 😅, mas a lista de compras já está enorme. Eu garimpo ofertas todo dia, com muito carinho, e <b>mando tudo no meu grupo do WhatsApp</b>.</p>
       <a class="btn js-whatsapp" href="#" target="_blank" rel="noopener" data-cta="hero">
