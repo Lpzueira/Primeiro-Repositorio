@@ -40,6 +40,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 | Anúncio `02 - Casa sem vida` (vídeo `1186489247067451`) | `120250372530580694` |
 | Anúncio `03 - Black Friday fake` (vídeo `1664190651832458`, pausar manualmente em 30/11) | `120250372530630694` |
 
+- Em 24/11/2026 os anúncios 01 e 02 foram rejeitados (spam) e substituídos por versões editadas (selo "comenta QUERO" trocado por "toque em SAIBA MAIS"): `01 - Mesa de Natal v2` (`120250372993590694`, vídeo `2238669337006050`) e `02 - Casa sem vida v2` (`120250372993620694`, vídeo `1927986591890908`). O 03 original segue no ar; existe um vídeo 03 editado na conta (`3523765214496910`, criativo `1821121579198663`) caso ele seja rejeitado.
 - Página do Facebook usada como identidade: `Casa.emconta01` (`1423100977560737`). O Instagram @casa.emconta01 ainda **não** estava vinculado à conta de anúncios.
 - Os `.mp4` não vão para o git (`.gitignore`); os vídeos ficam na biblioteca da conta de anúncios.
 
