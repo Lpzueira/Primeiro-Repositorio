@@ -26,6 +26,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 
 - Use **somente** a conta de anúncios **Casa em Conta** (ID no repositório privado). O login também enxerga outras contas do dono: não leia nem mexa nelas.
 - **Nunca crie, pause, ative ou altere campanha, conjunto, anúncio ou verba sem aprovação explícita do dono na conversa.** Leia, analise, proponha a mudança com números e espere o "pode fazer".
+- **Trava de segurança:** `.claude/settings.json` faz o Claude Code pedir confirmação antes de qualquer ferramenta que cria, ativa, pausa, duplica ou altera campanhas, conjuntos, anúncios, criativos, verbas, públicos, Pixel, catálogos ou permissões (conector Facebook e `execute_action` do Windsor.ai). Leitura e relatórios continuam livres. Não remova nem afrouxe essa trava sem o dono pedir. Se surgir uma ferramenta nova que mexa em dinheiro, proponha incluí-la na lista.
 - **Mudanças no site** (a campanha leva tráfego para ele): prepare numa branch, teste no celular e no computador e mostre o resultado ao dono. Só publique (merge na `main`, que é a branch publicada) depois do "pode publicar", e confira o site no ar em seguida.
 - Mudanças agendadas que mexem em dinheiro (verba, ativar/pausar) pedem confirmação do dono no app na hora de executar. Agende-as para horários em que o dono está acordado (entre 7h e 22h), nunca de madrugada.
 
