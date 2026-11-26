@@ -16,7 +16,7 @@ Antes de começar: leia o `CLAUDE.md` deste repositório (papel, metas, regra de
 - Vencedor claro (30% ou mais mais barato): concentrar a verba nele e colocar um criativo novo no lugar do pior.
 - Escalar: subir a verba **20 a 30% a cada 3 a 4 dias** no que funciona. Evite mudanças bruscas, que reiniciam o aprendizado.
 - Referência de prazo para lotar o grupo com R$ 20/dia: R$ 0,50/membro ≈ 26 dias; R$ 1/membro ≈ 51 dias; R$ 2/membro ≈ 100 dias.
-- Antes de **qualquer aumento de verba**: confirmar com o dono se as regras do programa de afiliados do ML permitem tráfego pago e o uso da marca nos criativos.
+- Regras do programa de afiliados do ML (tráfego pago e uso da marca nos criativos): o dono decidiu **conferir quando a campanha estiver dando resultados** (vendas ou comissões aparecendo). Quando isso acontecer, lembre o dono.
 
 Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mineiro (região do dono). Público maior tende a dar CPM e custo por lead menores, e o link de afiliado vende para o país todo. Um teste com criativo local ("Uberlândia e região") é hipótese para depois, não para agora.
 
@@ -50,7 +50,7 @@ Todas usam o conector do Facebook, **só** na conta e na campanha indicadas no `
 3. **Parecer claro: BOM, OK ou RUIM**, comparando com as regras de decisão e com os dias anteriores, e dizer o que esperar para amanhã. Se houver algo a mudar, propor com números.
 4. Formato: tabela + parecer em poucas linhas.
 
-### Parecer bom/ok/ruim (guia)
+### Parecer bom/ok/ruim (critérios aprovados pelo dono em 26/11/2026)
 
 - **BOM:** custo por lead dentro do corte (até R$ 3) e custo por membro caindo ou estável; nenhum anúncio rejeitado.
 - **OK:** custo dentro do corte mas subindo, ou poucos dados para julgar (antes de 3 a 4 dias ou de ~R$ 50 por anúncio).

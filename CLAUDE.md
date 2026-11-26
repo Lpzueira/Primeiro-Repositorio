@@ -41,7 +41,8 @@ Ficam na skill **`trafego-pago`** (`.claude/skills/trafego-pago/SKILL.md`): crit
 - **Membro barato não é membro que compra.** Quando houver vendas, cruze com os cliques e as comissões do painel de afiliados do ML.
 - Os Leads e PageViews de 24/11/2026 (antes da campanha) são testes do próprio dono.
 - Perto de 1.024 membros: criar o grupo 2 e trocar o link `whatsapp` no `CONFIG` do `index.html`.
-- Confirmar se as regras do programa de afiliados do ML permitem tráfego pago e o uso da marca nos criativos (**antes de qualquer aumento de verba**).
+- Confirmar se as regras do programa de afiliados do ML permitem tráfego pago e o uso da marca nos criativos. **Decisão do dono (26/11/2026): conferir quando a campanha estiver dando resultados** (vendas ou comissões aparecendo). Quando isso acontecer, lembre o dono dessa conferência.
+- **Aviso de cookies (LGPD):** hoje a Política de Privacidade (`privacidade.html`) usa "legítimo interesse" e não há aviso de cookies. O dono decidiu deixar o aviso para depois (26/11/2026); não implemente sem ele pedir.
 - **Conta de anúncios pré-paga:** a Meta desconta do saldo uma vez por dia e **pausa os anúncios se o saldo zerar**. O conector não mostra o saldo; estime pelo gasto e peça print ao dono quando precisar. A situação atual do pagamento está no repositório privado.
 - Os `.mp4` não vão para o git (`.gitignore`); os vídeos ficam na biblioteca da conta de anúncios.
 
