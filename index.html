@@ -256,7 +256,17 @@
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1477454040680046');
-  fbq('track', 'PageView');
+  // De onde veio a visita: "anuncio" (link de anúncio da Meta traz fbclid ou utm_source),
+  // "instagram" (bio, stories ou direct, sem fbclid) ou "outro". Vai em todos os eventos.
+  window.trafego = (function () {
+    try {
+      var q = new URLSearchParams(location.search);
+      if (q.get('fbclid') || q.get('utm_source')) return 'anuncio';
+      if (/instagram/i.test(document.referrer) || /Instagram/.test(navigator.userAgent)) return 'instagram';
+    } catch (e) {}
+    return 'outro';
+  })();
+  fbq('track', 'PageView', { trafego: window.trafego });
 </script>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1477454040680046&ev=PageView&noscript=1"></noscript>
 <!-- Fim do Meta Pixel -->
@@ -291,7 +301,7 @@
     </picture>
     <div class="head-txt">
       <p class="hand hello">oi, que bom te ver por aqui!</p>
-      <a class="handle js-instagram" href="#" target="_blank" rel="noopener">@casa.emconta01</a>
+      <span class="handle">@casa.emconta01</span>
     </div>
   </header>
 
@@ -307,34 +317,22 @@
         <svg viewBox="0 0 40 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M37 24C26 25 13 20 8 6"/><path d="M3 11 8 5l6 4"/></svg>
         é grátis, e só eu posto lá
       </p>
-      <div class="links">
-        <a class="link-card js-instagram" href="#" target="_blank" rel="noopener" data-cta="topo-instagram">
-          <span class="link-ic ig" aria-hidden="true"><svg><use href="#ig"/></svg></span>
-          <span class="link-txt"><b>Siga no Instagram</b><small>A obra e os achadinhos em vídeo</small></span>
-          <svg class="link-go" aria-hidden="true"><use href="#go"/></svg>
-        </a>
-        <a class="link-card js-vitrine" href="#" target="_blank" rel="noopener" data-cta="topo-vitrine">
-          <span class="link-ic ml" aria-hidden="true"><svg><use href="#bag"/></svg></span>
-          <span class="link-txt"><b>Ver minha vitrine</b><small>Meus achadinhos no Mercado Livre</small></span>
-          <svg class="link-go" aria-hidden="true"><use href="#go"/></svg>
-        </a>
-      </div>
     </div>
 
     <div class="album">
       <div class="photos">
-        <a class="polaroid js-instagram" href="#" target="_blank" rel="noopener">
+        <div class="polaroid">
           <img src="assets/obra-1.jpg" alt="Paredes de tijolo da obra da casa nova" loading="lazy" width="362" height="426">
           <span>a obra 🧱</span>
-        </a>
-        <a class="polaroid js-instagram" href="#" target="_blank" rel="noopener">
+        </div>
+        <div class="polaroid">
           <img src="assets/natal.jpg" alt="Mesa de Natal decorada com achadinhos do Mercado Livre" loading="lazy" width="322" height="440">
           <span>mesa dos sonhos</span>
-        </a>
-        <a class="polaroid js-instagram" href="#" target="_blank" rel="noopener">
+        </div>
+        <div class="polaroid">
           <img src="assets/obra-2.jpg" alt="Obra com ferragens e tijolos, perguntando se já dá para pôr enfeites de Natal" loading="lazy" width="362" height="426">
           <span>e o Natal? 🎄</span>
-        </a>
+        </div>
       </div>
       <a class="album-link js-instagram" href="#" target="_blank" rel="noopener" data-cta="album-instagram"><svg aria-hidden="true"><use href="#ig"/></svg>Acompanhe a obra no Instagram</a>
     </div>
@@ -451,9 +449,9 @@
   // Por isso o evento sai primeiro e o link abre uma fração de segundo depois.
   const eventoDoBotao = a => {
     const origem = a.dataset.cta;
-    if (a.classList.contains("js-whatsapp")) return ["track", "Lead", { content_name: "Grupo WhatsApp", origem }];
-    if (a.classList.contains("js-instagram")) return ["trackCustom", "CliqueInstagram", { origem }];
-    if (a.classList.contains("js-vitrine")) return ["trackCustom", "CliqueVitrine", { origem }];
+    if (a.classList.contains("js-whatsapp")) return ["track", "Lead", { content_name: "Grupo WhatsApp", origem, trafego: window.trafego }];
+    if (a.classList.contains("js-instagram")) return ["trackCustom", "CliqueInstagram", { origem, trafego: window.trafego }];
+    if (a.classList.contains("js-vitrine")) return ["trackCustom", "CliqueVitrine", { origem, trafego: window.trafego }];
     return null;
   };
   document.querySelectorAll("a.js-whatsapp, a.js-instagram, a.js-vitrine").forEach(a => {
