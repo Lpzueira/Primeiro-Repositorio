@@ -44,7 +44,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 - Página do Facebook usada como identidade: `Casa.emconta01` (`1423100977560737`). O Instagram @casa.emconta01 ainda **não** estava vinculado à conta de anúncios.
 - Os `.mp4` não vão para o git (`.gitignore`); os vídeos ficam na biblioteca da conta de anúncios.
 
-- **25/11/2026 ~22:30 (aprovado pelo dono):** anúncio `03 - Black Friday fake` **pausado** (não rodou: R$ 0,04). Criado `04 - Cozinha farmhouse` (`120250386672380694`, vídeo `2404378563300318`, criativo `1946119753017394`), mesmo link e botão Saiba mais. Na mesma noite, com aprovação do dono, ligada a **música automática da Meta** (Advantage+ "audio"): novo criativo `2105531600144657`. Só o 04 tem música; 01 e 02 seguem sem som até 29/11. Verba do conjunto: **R$ 40/dia desde 06:29 de 26/11** (o lembrete era 00:05, mas a sessão reiniciou e a mudança só entrou às 06:29; confirmado no histórico da Meta; o nome do conjunto ainda diz "R$20"). Avaliar em 29/11 se volta para R$ 20–25 ou mantém.
+- **25/11/2026 ~22:30 (aprovado pelo dono):** anúncio `03 - Black Friday fake` **pausado** (não rodou: R$ 0,04). Criado `04 - Cozinha farmhouse` (`120250386672380694`, vídeo `2404378563300318`, criativo `1946119753017394`), mesmo link e botão Saiba mais. Na mesma noite, com aprovação do dono, ligada a **música automática da Meta** (Advantage+ "audio"): novo criativo `2105531600144657`. Só o 04 tem música; 01 e 02 seguem sem som até 29/11. Verba do conjunto: **R$ 40/dia desde 06:29 de 26/11** (o lembrete era 00:05, mas a mudança de verba ficou esperando a confirmação do dono no app, que só foi dada ao acordar; confirmado no histórico da Meta; o nome do conjunto ainda diz "R$20"). Avaliar em 29/11 se volta para R$ 20–25 ou mantém.
 
 Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mineiro (região do dono). Público maior tende a dar CPM e custo por lead menores, e o link de afiliado vende para o país todo. Um teste com criativo local ("Uberlândia e região") é hipótese para depois, não para agora.
 
@@ -72,3 +72,4 @@ Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mine
 - ~11h, ~15h e ~20h (rodam às 10:56, 14:56 e 19:56): checagem rápida (`trig_01EuJ3Re8oYc8pg8hwfmVkFg`). A das 20h também pede membros e seguidores.
 - ~21h (roda às 20:56): relatório do dia com parecer bom/ok/ruim (`trig_01FmY7QRnnaewh3xEPHR5HRm`).
 - Notificação push só nessas checagens, em lembretes agendados ou em algo urgente. Nunca a cada tarefa pedida durante o dia.
+- Mudanças agendadas que mexem em dinheiro (verba, ativar/pausar) pedem confirmação do dono no app na hora de executar. Agende-as para horários em que o dono está acordado (entre 7h e 22h), nunca de madrugada.
