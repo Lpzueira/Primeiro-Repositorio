@@ -1,0 +1,8 @@
+# Configuração do GitHub Pages (Jekyll).
+# Arquivos de trabalho e anotações internas não devem ser publicados no site.
+exclude:
+  - CLAUDE.md
+  - README.md
+  - divulgacao/
+  - .claude/
+  - .gitignore
