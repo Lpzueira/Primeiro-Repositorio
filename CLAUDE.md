@@ -27,7 +27,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 ## Campanha 1 (ficha completa em `divulgacao/campanha-1.md`)
 
 - Objetivo **Cadastros**, conversão no site, evento **Lead** do Pixel (clique em "Entrar no grupo").
-- R$ 20/dia no conjunto, **Brasil amplo**, 22 a 55 anos, Público Advantage+, Feed/Stories/Reels do Facebook e Instagram, sem Audience Network.
+- R$ 40/dia no conjunto desde 26/11 (era R$ 20), **Brasil amplo**, 22 a 55 anos, Público Advantage+, Feed/Stories/Reels do Facebook e Instagram, sem Audience Network.
 - 3 anúncios: `01 - Mesa de Natal`, `02 - Casa sem vida`, `03 - Black Friday fake` (pausar o 03 em 30/11/2026).
 - Início previsto: 25/11/2026.
 - Montada pelo conector em 24/11/2026 e **publicada** no mesmo dia com aprovação do dono. Esta campanha não aceita agenda por anúncio, então o anúncio 03 **não** tem término automático: pausar manualmente em 30/11/2026.
@@ -44,7 +44,7 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 - Página do Facebook usada como identidade: `Casa.emconta01` (`1423100977560737`). O Instagram @casa.emconta01 ainda **não** estava vinculado à conta de anúncios.
 - Os `.mp4` não vão para o git (`.gitignore`); os vídeos ficam na biblioteca da conta de anúncios.
 
-- **25/11/2026 ~22:30 (aprovado pelo dono):** anúncio `03 - Black Friday fake` **pausado** (não rodou: R$ 0,04). Criado `04 - Cozinha farmhouse` (`120250386672380694`, vídeo `2404378563300318`, criativo `1946119753017394`), mesmo link e botão Saiba mais. Na mesma noite, com aprovação do dono, ligada a **música automática da Meta** (Advantage+ "audio"): novo criativo `2105531600144657`. Só o 04 tem música; 01 e 02 seguem sem som até 29/11. Verba do conjunto: subir de R$ 20 para **R$ 40/dia** às 00:05 de 26/11 (lembrete agendado nesta conversa, `trig_01KAB8dou9AmhrWrnu9mpQA7`). Avaliar em 29/11 se volta para R$ 20–25 ou mantém.
+- **25/11/2026 ~22:30 (aprovado pelo dono):** anúncio `03 - Black Friday fake` **pausado** (não rodou: R$ 0,04). Criado `04 - Cozinha farmhouse` (`120250386672380694`, vídeo `2404378563300318`, criativo `1946119753017394`), mesmo link e botão Saiba mais. Na mesma noite, com aprovação do dono, ligada a **música automática da Meta** (Advantage+ "audio"): novo criativo `2105531600144657`. Só o 04 tem música; 01 e 02 seguem sem som até 29/11. Verba do conjunto: **R$ 40/dia desde 00:05 de 26/11** (feito e confirmado; o nome do conjunto ainda diz "R$20"). Avaliar em 29/11 se volta para R$ 20–25 ou mantém.
 
 Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mineiro (região do dono). Público maior tende a dar CPM e custo por lead menores, e o link de afiliado vende para o país todo. Um teste com criativo local ("Uberlândia e região") é hipótese para depois, não para agora.
 
