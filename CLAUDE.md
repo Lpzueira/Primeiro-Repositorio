@@ -73,3 +73,9 @@ Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mine
 - ~21h (roda às 20:56): relatório do dia com parecer bom/ok/ruim (`trig_01FmY7QRnnaewh3xEPHR5HRm`).
 - Notificação push só nessas checagens, em lembretes agendados ou em algo urgente. Nunca a cada tarefa pedida durante o dia.
 - Mudanças agendadas que mexem em dinheiro (verba, ativar/pausar) pedem confirmação do dono no app na hora de executar. Agende-as para horários em que o dono está acordado (entre 7h e 22h), nunca de madrugada.
+
+## Pagamento da conta de anúncios (pré-paga)
+
+- A conta é **pré-paga**: a Meta desconta do saldo uma vez por dia e **pausa os anúncios se o saldo zerar**. O conector não mostra o saldo; estime pelo gasto e peça print ao dono quando precisar.
+- 26/11: o dono colocou ~R$ 50 por Pix (saldo R$ 58,09 por volta das 10h). Cartão Mastercard final 0401 cadastrado, mas **ainda não verificado** pela Meta ("atividade incomum"); o app ficou com tela branca. O dono decidiu não tentar validar de novo em 26/11. A recarga automática (R$ 80 quando o saldo ≤ R$ 40) ficou ligada, mas vai falhar enquanto o cartão não for verificado.
+- **Em toda checagem da manhã:** se o cartão não estiver verificado, lembrar o dono de colocar saldo por Pix (uns R$ 80 a 100 com a verba de R$ 40/dia) e de tentar validar o cartão uma vez, sem insistir.
