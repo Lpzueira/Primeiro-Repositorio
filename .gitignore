@@ -1,1 +1,9 @@
 divulgacao/anuncios/*.mp4
+
+# Segredos e configurações locais (nunca vão para o repositório público)
+.env
+.env.*
+.claude/settings.local.json
+
+# Arquivos do sistema
+.DS_Store

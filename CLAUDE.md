@@ -30,15 +30,9 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 - **Mudanças no site** (a campanha leva tráfego para ele): prepare numa branch, teste no celular e no computador e mostre o resultado ao dono. Só publique (merge na `main`, que é a branch publicada) depois do "pode publicar", e confira o site no ar em seguida.
 - Mudanças agendadas que mexem em dinheiro (verba, ativar/pausar) pedem confirmação do dono no app na hora de executar. Agende-as para horários em que o dono está acordado (entre 7h e 22h), nunca de madrugada.
 
-## Regras de decisão (definidas antes de gastar)
+## Regras de decisão e rotina das checagens
 
-- Não julgue um anúncio antes de **3 a 4 dias** e de uns **R$ 50 gastos** nele.
-- Métrica principal: **custo por Lead**. Corte: acima de **R$ 3 por lead**, pausar ou trocar o criativo (mexer no criativo antes de mexer no público).
-- Vencedor claro (30% ou mais mais barato): concentrar a verba nele e colocar um criativo novo no lugar do pior.
-- Escalar: subir a verba **20 a 30% a cada 3 a 4 dias** no que funciona. Evite mudanças bruscas, que reiniciam o aprendizado.
-- Referência de prazo para lotar o grupo com R$ 20/dia: R$ 0,50/membro ≈ 26 dias; R$ 1/membro ≈ 51 dias; R$ 2/membro ≈ 100 dias.
-
-Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mineiro (região do dono). Público maior tende a dar CPM e custo por lead menores, e o link de afiliado vende para o país todo. Um teste com criativo local ("Uberlândia e região") é hipótese para depois, não para agora.
+Ficam na skill **`trafego-pago`** (`.claude/skills/trafego-pago/SKILL.md`): critérios para julgar, cortar e escalar anúncios, a decisão "Brasil amplo", o que cada checagem verifica, o formato do relatório e o parecer bom/ok/ruim. Use a skill sempre que for analisar a campanha ou propor mudanças.
 
 ## Pontos de atenção
 
@@ -57,4 +51,5 @@ Decisão tomada: começar com **Brasil amplo**, não restrito ao Triângulo Mine
 - ~11h, ~15h e ~20h (rodam às 10:56, 14:56 e 19:56): checagem rápida. A das 20h também pede membros e seguidores.
 - ~21h (roda às 20:56): relatório do dia com parecer bom/ok/ruim.
 - Notificação push só nessas checagens, em lembretes agendados ou em algo urgente. Nunca a cada tarefa pedida durante o dia.
+- O que cada checagem verifica e o formato do relatório: skill `trafego-pago`.
 - Os IDs das checagens estão no repositório privado.
