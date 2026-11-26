@@ -11,7 +11,8 @@ Página "link na bio" do Instagram [@casa.emconta01](https://www.instagram.com/c
 - `assets/`: logo, ícone da aba e fotos da obra usadas nas páginas.
 - `divulgacao/`: textos de anúncios e do grupo, capa e foto de perfil do Facebook. **Não** é publicada no site.
 - `_config.yml`: diz ao GitHub Pages para **não** publicar no site o `CLAUDE.md`, o `README.md` e a pasta `divulgacao/`.
-- `CLAUDE.md` e `.claude/`: instruções para o Claude, a skill `trafego-pago` e a trava de segurança (`.claude/settings.json`), que pede confirmação antes de qualquer ação que mexa nos anúncios.
+- `CLAUDE.md` e `.claude/`: instruções para o Claude, a equipe de agentes (`.claude/agents/`), as skills (`.claude/skills/`) e a trava de segurança (`.claude/settings.json`), que pede confirmação antes de qualquer ação que mexa nos anúncios.
+- `divulgacao/rotina-no-pc.md`: como postar pelo PC; `divulgacao/whatsapp-business-respostas.md`: respostas automáticas e rápidas do WhatsApp Business.
 
 Cada botão tem um `data-cta` (`hero`, `fixo`, `final`, `topo-instagram`, `topo-vitrine`, `final-instagram`, `final-vitrine`, `album-instagram`, `faixa-black-friday`), que vai no parâmetro `origem` dos eventos do Pixel.
 

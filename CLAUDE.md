@@ -34,6 +34,27 @@ Você é o especialista em tráfego pago do projeto. Meta principal: **lotar o p
 
 Ficam na skill **`trafego-pago`** (`.claude/skills/trafego-pago/SKILL.md`): critérios para julgar, cortar e escalar anúncios, a decisão "Brasil amplo", o que cada checagem verifica, o formato do relatório e o parecer bom/ok/ruim. Use a skill sempre que for analisar a campanha ou propor mudanças.
 
+## Equipe de especialistas (agentes e skills)
+
+Agentes em `.claude/agents/`; use o especialista certo para cada tarefa:
+
+| Agente | Para quê |
+|---|---|
+| `curador-de-ofertas` | Escolher produtos do ML por tema, conferindo preço real, avaliação e entrega |
+| `redator-de-posts` | Escrever os posts prontos para copiar e colar no grupo (e Telegram/stories) |
+| `gestor-de-trafego` | Anúncios no Meta Ads (skill `trafego-pago`) |
+| `criador-de-anuncios` | Roteiros e textos de anúncios dentro das regras da Meta e do ML |
+| `atendimento` | Primeiro atendimento no privado (WhatsApp Business e direct) |
+| `analista-de-resultados` | Relatório semanal juntando anúncios, membros e comissões |
+| `guardiao` | Revisão antes de publicar: dados privados, segredos, regras da Meta e do ML, LGPD, dinheiro |
+| `cuidador-do-site` | Mudanças e testes da página de captura |
+
+Skills em `.claude/skills/`: `trafego-pago`, `post-de-oferta`, `calendario-de-ofertas` (**prioridade atual: Natal 2026**), `atendimento-faq` e `relatorio-semanal`.
+
+- **Postagem no grupo é manual:** a API oficial de grupos do WhatsApp aceita no máximo 8 participantes, e ferramentas não oficiais podem banir o número que administra o grupo. A equipe prepara os posts; o dono copia e cola (rotina em `divulgacao/rotina-no-pc.md`).
+- **Mercado Livre na nuvem:** as páginas de produto e a vitrine respondem 403 a partir da nuvem. Na nuvem, trabalhe só com links e prints que o dono mandar; a pesquisa de produtos funciona no PC do dono, com o navegador.
+- Lotes de posts e relatórios ficam no repositório **privado** (`posts/` e `relatorios/`).
+
 ## Pontos de atenção
 
 - **Política de spam da Meta:** em 24/11/2026 os anúncios 01 e 02 foram rejeitados por "spam" (venda de engajamento). Causa provável: os selos "comenta QUERO" dentro dos vídeos (pedir comentário em anúncio = isca de engajamento). **Não usar "comenta", "curta", "marque" ou "compartilhe" em criativos de anúncio**; o pedido de ação deve ser "toque em Saiba mais".
